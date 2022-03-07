@@ -16,20 +16,31 @@ describe('AppComponent', () => {
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
+    const component = fixture.componentInstance;
+    expect(component).toBeTruthy();
   });
 
   it(`should have as title 'angular-testing'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-testing');
+    const component = fixture.componentInstance;
+    expect(component.title).toEqual('angular-testing');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
+    const component = fixture.componentInstance;
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('angular-testing app is running!');
+
+    const h1 = compiled.querySelector('h1');
+    expect( h1?.textContent ).toContain( component.title );
+    //expect(compiled.querySelector('.content span')?.textContent).toContain('angular-testing app is running!');
+  });
+
+  it('check snapshoot', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect( compiled ).toMatchSnapshot();
   });
 });
