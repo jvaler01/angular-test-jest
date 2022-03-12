@@ -37,10 +37,10 @@ describe('AppComponent', () => {
     //expect(compiled.querySelector('.content span')?.textContent).toContain('angular-testing app is running!');
   });
 
-  it('check snapshoot', () => {
+  /*it('check snapshoot', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
     expect( compiled ).toMatchSnapshot();
-  });
+  });*/
 });
