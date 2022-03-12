@@ -14,24 +14,24 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Angular testing con JEST
+## Angular testing with JEST
 
-1. Remover cualquier referencia de Jasmine / Karma en el package.json
+1. Remove any reference to Jasmine / Karma in the package.json
 ```
 npm remove <karma karma-chrome-launcher...>
 ```
 
-2. Instalar Jest
+2. Install Jest
 ```
 npm install --save-dev jest jest-preset-angular @types/jest
 ```
 
-3. Crear el ```setup-jest.ts``` en la carpeta root del proyecto y el contenido es el siguiente
+3. Create the ```setup-jest.ts``` file in the root folder of the project with the following content
 ```setup-jest.ts
 import 'jest-preset-angular/setup-jest';
 ```
 
-4. Agregar en el package.json, la configuración de Jest
+4. In the package.json add the following configuration
 ```package.json
 "jest": {
     "preset": "jest-preset-angular",
@@ -43,20 +43,20 @@ import 'jest-preset-angular/setup-jest';
 ```
 
 
-4. Configurar JEST en tsconfig.json y tsconfig.spec.json
+4. Configurate JEST in tsconfig.json and tsconfig.spec.json
 ```tsconfig.json
 "types": [
   "jest"
 ]
 ```
 
-5. Configurar los comandos para ejecutar las pruebas en el package.json
+5. Configure the commands to run the tests in the package.json
 ```package.json
 "test": "jest",
 "test:watch": "jest --watchAll",
 ```
 
-6. Remover karma.config.js y el archivo test.ts
+6. Remove karma.config.js and the test.ts file
 
 
 
