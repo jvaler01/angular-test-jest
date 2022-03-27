@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PokemonComponent check snapshoot 1`] = `
+<div
+  id="root1"
+>
+  <h2>
+    Pokemon
+  </h2>
+  <hr />
+  <div>
+    <h3>
+      Loading...
+    </h3>
+  </div>
+  
+  
+</div>
+`;

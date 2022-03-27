@@ -1,4 +1,7 @@
 <div class="container">
     <h1>{{title}}</h1>
+    <a class="btn btn-dark mx-1" [routerLink]="['/basic/counter']" routerLinkActive="router-link-active">Counter</a>
+    <a class="btn btn-dark mx-1" [routerLink]="['/basic/pokemon']" routerLinkActive="router-link-active">Pokemon</a>
+
     <router-outlet></router-outlet>
 </div>
