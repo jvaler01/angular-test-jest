@@ -1,0 +1,10 @@
+<h1>Son</h1>
+<hr>
+<code class="mt-2">{{ client | json }}</code>
+<hr>
+<button data-test="btn-update" *ngIf="client" class="btn btn-outline-primary"(click)="onChange(2)">
+    Change Id
+</button>
+<button data-test="btn-delete" *ngIf="client" class="btn btn-outline-danger ml-2" (click)="onDelete()">
+    Remove client
+</button>

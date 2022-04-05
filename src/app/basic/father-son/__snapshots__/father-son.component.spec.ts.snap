@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FatherSonComponent check snapshoot 1`] = `
+<div
+  id="root1"
+>
+  <h1>
+    Son
+  </h1>
+  <hr />
+  <code
+    class="mt-2"
+  >
+    
+  </code>
+  <hr />
+  
+  
+</div>
+`;
+
+exports[`FatherSonComponent check snapshoot client 1`] = `
+<div
+  id="root4"
+>
+  <h1>
+    Son
+  </h1>
+  <hr />
+  <code
+    class="mt-2"
+  >
+    {
+  "id": 1,
+  "name": "test"
+}
+  </code>
+  <hr />
+  <button
+    class="btn btn-outline-primary"
+    data-test="btn-update"
+  >
+     Change Id
+
+  </button>
+  
+  <button
+    class="btn btn-outline-danger ml-2"
+    data-test="btn-delete"
+  >
+     Remove client
+
+  </button>
+  
+</div>
+`;
