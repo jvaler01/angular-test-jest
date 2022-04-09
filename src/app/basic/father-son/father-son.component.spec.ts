@@ -71,7 +71,7 @@ describe('FatherSonComponent', () => {
     });
   });
 
-  it('check button emit update if id != undeficend and client != undefined', () => {
+  it('check button emit update if id != undefined and client != undefined', () => {
     jest.spyOn( component.onClientUpdated, 'emit' );
     component.onChange(10);
     expect( component.onClientUpdated.emit ).not.toHaveBeenCalled();
