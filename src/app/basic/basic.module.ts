@@ -4,6 +4,7 @@ import { CounterComponent } from './counter/counter.component';
 import { PokemonComponent } from './pokemon/pokemon.component';
 import { FatherComponent } from './father/father.component';
 import { FatherSonComponent } from './father-son/father-son.component';
+import { CounterRouteComponent } from './counter-route/counter-route.component';
 
 
 
@@ -12,7 +13,8 @@ import { FatherSonComponent } from './father-son/father-son.component';
     CounterComponent,
     PokemonComponent,
     FatherComponent,
-    FatherSonComponent
+    FatherSonComponent,
+    CounterRouteComponent
   ],
   imports: [
     CommonModule
